@@ -1,0 +1,82 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-newsmuzzler-dev-160010-authRole",
+      "UnauthRoleArn": "arn:aws:iam::976740530968:role/amplify-newsmuzzler-dev-160010-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::976740530968:role/amplify-newsmuzzler-dev-160010-authRole",
+      "Region": "eu-west-1",
+      "DeploymentBucketName": "amplify-newsmuzzler-dev-160010-deployment",
+      "UnauthRoleName": "amplify-newsmuzzler-dev-160010-unauthRole",
+      "StackName": "amplify-newsmuzzler-dev-160010",
+      "StackId": "arn:aws:cloudformation:eu-west-1:976740530968:stack/amplify-newsmuzzler-dev-160010/9586a460-0e25-11eb-94b8-0a62b96e8314",
+      "AmplifyAppId": "d782pkgrhutet"
+    }
+  },
+  "auth": {
+    "newsmuzzler1ee61e4d": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "output": {
+        "AppClientSecret": "6fu959qn52qsfsij6galigjlotq3g9nsj1amourusc6mage9k3d",
+        "UserPoolId": "eu-west-1_jIPe6No0z",
+        "AppClientIDWeb": "hi32200uki0rfgsrb75mjajk7",
+        "AppClientID": "6hbtp40bjf9gn5aa8dl761pvbk",
+        "IdentityPoolId": "eu-west-1:75a88377-1e5c-47fd-974b-238879ff25f6",
+        "IdentityPoolName": "newsmuzzler1ee61e4d_identitypool_1ee61e4d__dev",
+        "UserPoolName": "newsmuzzler1ee61e4d_userpool_1ee61e4d"
+      },
+      "lastPushTimeStamp": "2020-10-19T00:44:18.714Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-newsmuzzler-dev-160010-deployment/amplify-cfn-templates/auth/newsmuzzler1ee61e4d-cloudformation-template.yml",
+        "logicalId": "authnewsmuzzler1ee61e4d"
+      }
+    }
+  },
+  "function": {
+    "newsmuzzlere8e4e6bc": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": [],
+      "output": {
+        "Region": "eu-west-1",
+        "Arn": "arn:aws:lambda:eu-west-1:976740530968:function:newsmuzzlere8e4e6bc-dev",
+        "Name": "newsmuzzlere8e4e6bc-dev",
+        "LambdaExecutionRole": "newsmuzzlerLambdaRole4fd9fc83-dev"
+      },
+      "lastPushTimeStamp": "2020-10-19T00:44:18.716Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-newsmuzzler-dev-160010-deployment/amplify-cfn-templates/function/newsmuzzlere8e4e6bc-cloudformation-template.json",
+        "logicalId": "functionnewsmuzzlere8e4e6bc"
+      }
+    }
+  },
+  "api": {
+    "api32b07829": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "newsmuzzlere8e4e6bc",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ],
+      "output": {
+        "ApiName": "api32b07829",
+        "RootUrl": "https://nweeg7sylh.execute-api.eu-west-1.amazonaws.com/dev",
+        "ApiId": "nweeg7sylh"
+      },
+      "lastPushTimeStamp": "2020-10-19T00:44:18.718Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-newsmuzzler-dev-160010-deployment/amplify-cfn-templates/api/api32b07829-cloudformation-template.json",
+        "logicalId": "apiapi32b07829"
+      }
+    }
+  }
+}
