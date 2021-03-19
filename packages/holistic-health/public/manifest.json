@@ -1,0 +1,58 @@
+{
+  "short_name": "Health app",
+  "name": "Holistic Health",
+  "app_ID": "345f6ty8l0",
+  "description": "Health app offering visual representation and comparison of personal data using graphs and various progress indicators",
+  "key_features": "Comparing data and visual representation of data",
+  "application_screenshots": [
+    {
+      "src": "/images/screenshot1.png",
+      "type": "image/png",
+      "sizes": "2762×1594"
+    },
+    {
+      "src": "/images/screenshot2.png",
+      "type": "image/png",
+      "sizes": "2770×1589"
+    }
+  ],
+  "publisher_name": "Prifina",
+  "type_of_application": "Profile Data App",
+  "application_category": "",
+  "available_user_interfaces": "Desktop Browser",
+  "languages_supported": "en",
+  "age_restrictions": "21+",
+  "data_permissions": "",
+  "support_contact": "",
+  "icons": [
+    {
+      "src": "/images/icons-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "white",
+  "display": "standalone",
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "short_name": "Dashboard",
+      "description": "",
+      "url": "/",
+      "icons": [{ "src": "/images/today.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Graphs",
+      "short_name": "Graphs",
+      "description": "",
+      "url": "/graphs",
+      "icons": [{ "src": "/images/tomorrow.png", "sizes": "192x192" }]
+    }
+  ]
+}
