@@ -1,9 +1,24 @@
 {
-  "name": "prifina-app-starter",
+  "name": "holistic-health",
   "version": "1.0.0",
-  "author": "Tero <tero@prifina.com>",
-  "main": "index.js",
+  "description": "Holistic Health",
+  "author": "hamza <hhalilovic@prifina.com>",
+  "homepage": "https://github.com/hamzahalilovic/apps#readme",
   "license": "MIT",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamzahalilovic/apps.git"
+  },
   "devDependencies": {
     "@babel/cli": "^7.12.13",
     "@babel/core": "^7.12.13",
@@ -47,7 +62,8 @@
     "build": "cross-env NODE_ENV=production webpack --mode production --config config/webpack.config.js",
     "build:dev": "cross-env NODE_ENV=development webpack --mode development --config config/webpack.dev-config.js",
     "start": "yarn build:dev && cross-env NODE_ENV=development webpack serve --config ./config/webpack.dev-config.js",
-    "storybook": "start-storybook -p 9009 -s public"
+    "storybook": "start-storybook -p 9009 -s public",
+    "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "peerDependencies": {
     "@prifina/faker": "latest",
@@ -71,5 +87,8 @@
     "react-router-dom": "^5.2.0",
     "react-select": "^4.2.1",
     "recharts": "^2.0.8"
+  },
+  "bugs": {
+    "url": "https://github.com/hamzahalilovic/apps/issues"
   }
 }
