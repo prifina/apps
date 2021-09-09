@@ -2,15 +2,14 @@ import React, { useState } from "react";
 
 // import { Text, Flex } from "@blend-ui/core";
 
-import { Text, Flex, Box, Avatar } from "@chakra-ui/react";
-
 import {
   extendTheme,
   ThemeProvider,
   Progress,
   Stack,
   Tooltip,
-  WrapItem,
+  Text,
+  Flex,
 } from "@chakra-ui/react";
 
 const styles = {

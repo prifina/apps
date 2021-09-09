@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import { Text, Flex } from "@blend-ui/core";
-import Box from "@blend-ui/core/dist/esm/Box";
 import {
   XAxis,
   YAxis,
@@ -12,7 +10,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-import { extendTheme, ThemeProvider } from "@chakra-ui/react";
+import { extendTheme, ThemeProvider, Flex, Text, Box } from "@chakra-ui/react";
 import Select from "react-select";
 
 import {

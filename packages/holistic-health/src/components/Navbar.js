@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 // import { Text, Avatar, Flex } from "@blend-ui/core";
 
@@ -13,7 +12,7 @@ const styles = {
   zIndex: 1,
 };
 
-function Navbar() {
+const Navbar = () => {
   return (
     <Flex
       height="69px"
@@ -35,28 +34,13 @@ function Navbar() {
       >
         <img src={LogoIcon} alt="React Logo" />
         <Flex paddingLeft={20}>
-          <Link to="/" style={{ textDecoration: "none" }}>
-            <Text color={"#5F6AC4"} fontSize={18}>
-              Health app
-            </Text>
-          </Link>
+          <Text color={"#5F6AC4"} fontSize={18}>
+            Health app
+          </Text>
         </Flex>
       </Flex>
-      <div>
-        <Flex alignItems={"center"} marginTop={-13}>
-          <Text color={"#5F6AC4"} fontSize={16}>
-            Hello,{" "}
-          </Text>
-          <Flex paddingLeft={4}>
-            <Text fontSize={16}> Jane Doe</Text>
-          </Flex>
-          <Flex paddingLeft={10} size={44}>
-            <Avatar />
-          </Flex>
-        </Flex>
-      </div>
     </Flex>
   );
-}
+};
 
 export default Navbar;

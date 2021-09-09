@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from "react";
 
-import { Text, Flex } from "@blend-ui/core";
 import Select from "react-select";
-
-import Box from "@blend-ui/core/dist/esm/Box";
 
 import ProgressContainer from "../components/ProgressContainer";
 import ProgressCard from "../components/ProgressCard";
 import Card from "../components/Card";
 
-import { extendTheme, ThemeProvider } from "@chakra-ui/react";
+import { extendTheme, ThemeProvider, Box, Flex, Text } from "@chakra-ui/react";
 
 import SleepIcon from "../assets/sleep.svg";
 import HeartIcon from "../assets/heart.svg";
