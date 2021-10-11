@@ -1,0 +1,42 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "newsmuzzlere8e4e6bc",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            },
+            "policyResourceName": "/items"
+        }
+    ],
+    "resourceName": "api32b07829",
+    "apiName": "api32b07829",
+    "functionArns": [
+        {
+            "lambdaFunction": "newsmuzzlere8e4e6bc"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-newsmuzzler-dev-160010-authRole",
+        "unAuthRoleName": "amplify-newsmuzzler-dev-160010-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "newsmuzzlere8e4e6bc",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
